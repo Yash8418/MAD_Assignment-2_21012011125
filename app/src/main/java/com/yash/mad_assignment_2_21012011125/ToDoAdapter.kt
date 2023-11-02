@@ -10,11 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.yash.mad_assignment_2_21012011125.R
 import com.yash.mad_assignment_2_21012011125.Todo
 class TodoAdapter(
-    private val todos: MutableList<Todo>
-) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
+    private val todos: MutableList<Todo>) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
     class TodoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_todo, parent, false)
         return TodoViewHolder(itemView)
